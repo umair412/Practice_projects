@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://kit.fontawesome.com/0d5b687ba9.js" crossorigin="anonymous"></script>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <div class="body">
+        <img src="imgs/logo-qr-generator.svg" alt=""><br>
+        <form>
+            <input type="text" name="url" id="url" placeholder="Enter an url">
+            <button class="qr-button" type="button">QR Code</button>
+        </form>
+    </div>
+    <div class="qr-page">
+        <img class="qrpage-logo" src="imgs/logo-qr-generator.svg" alt="">
+        <div class="qrcode-body">
+            <div class="qrcode-bg">
+                <div id="qrcode"></div>
+            </div>
+            <button class="download-button" >Download <i class="fa-solid fa-download"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

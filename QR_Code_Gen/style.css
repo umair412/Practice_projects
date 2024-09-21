@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("imgs/bg-illustration.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #111729; 
+}
+.body{
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+form{
+    margin-top: 10px;
+    border: 1px solid #3662E3;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #02081a;
+
+}
+input{
+    border: none;
+    width: 300px;
+    font-size: 16px;
+    background-color: transparent;
+}
+input:focus{
+    outline: none;
+    color: #F2F5F9;
+}
+form button{
+    padding: 8px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: #3662E3;
+    color: #F2F5F9;
+    cursor: pointer;
+}
+.qr-page{
+    display: none;
+}
+.qrcode-body{
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+.qrcode-bg{
+    background-color: #F2F5F9;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+.qrpage-logo{
+    margin: 40px 90px;
+}
+.qrcode-body button{
+    background-color: #3662E3;
+    color: #F2F5F9;
+    margin-top: 70px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+@media screen and (max-width: 640px){
+    form{
+        width: 300px;
+    }
+    input{
+        width: 200px
+    }
+}
