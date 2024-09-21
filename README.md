@@ -1,4 +1,4 @@
 This repo includes projects I do for practice. <br>
-Uploaded Price Table which is developed with HTML and CSS <br>
-Uploaded Calculator with simple arithmetic operations between two operands <br>
-Uploaded QR Code Generator with downloadable capability
+Uploaded Price Table which is developed with HTML and CSS (21-Sept-2024) <br>
+Uploaded Calculator with simple arithmetic operations between two operands (21-Sept-2024) <br>
+Uploaded QR Code Generator with downloadable capability (22-Sept-2024)
