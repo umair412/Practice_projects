@@ -19,6 +19,7 @@ body{
     }
     .body button{
         width: 25% !important;
+        height: 80px !important;
     }
     .body input{
         height: 150px !important;
