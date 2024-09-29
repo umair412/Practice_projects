@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Multi Step Form</title>
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <div class="form-header">
+                <p>Register</p>
+            </div>
+            <div class="form-body">
+                <div class="inputs">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="enter your name" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com"><br>
+                </div>
+                <div class="btn">
+                    <button type="button" class="first">Continue</button>
+                    <button type="button" class="last" id="last-btn">Continue</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="pagination">
+        <div class="text">
+            <p>Step 1 of 3</p>
+        </div>
+        <div class="dots">
+            <i class="fa-solid fa-circle active"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0d5b687ba9.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
