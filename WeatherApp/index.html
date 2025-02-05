@@ -7,24 +7,97 @@
         <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div class="main-body">
             <div class="info">
-                <h4 class="city">Sialkot</h4>
-                <h4 class="date">27.01.2024</h4>
+                <h4 class="city"></h4>
+                <h4 class="date"></h4>
             </div>
+            <div class="search-box">
+                <input type="text" name="city" id="search" placeholder="Search..." />
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="suggestion-box"></div>
+
             <div class="temp-area">
-                <h1 class="temp">20°</h1>
-                <p class="wind"><i class="fa-solid fa-wind"></i> 6.1 mph</p>
-                <p class="wind"><i class="fa-solid fa-droplet"></i> 90 %</p>
+                <h1 class="temp"></h1>
+                <p class="extra-info"></p>
+            </div>
+            <p class="condition"></p>
+            <div class="forecast">
+                <div class="day">
+                    <h4 class="next-day"></h4>
+                    <p class="next-temp"></p>
+                    <p class="next-condition"></p>
+                </div>
+                <div class="day">
+                    <h4 class="next-day"></h4>
+                    <p class="next-temp"></p>
+                    <p class="next-condition"></p>
+                </div>
+                <div class="day">
+                    <h4 class="next-day"></h4>
+                    <p class="next-temp"></p>
+                    <p class="next-condition"></p>
+                </div>
+                <div class="day">
+                    <h4 class="next-day"></h4>
+                    <p class="next-temp"></p>
+                    <p class="next-condition"></p>
+                </div>
+                <div class="day">
+                    <h4 class="next-day"></h4>
+                    <p class="next-temp"></p>
+                    <p class="next-condition"></p>
+                </div>
             </div>
         </div>
-        <div class="sidebar"></div>
+
+        <div class="sidebar">
+            <h3 class="time"></h3>
+            <div class="temp-area temp-area-sidebar">
+                <h1 class="temp temp-sidebar"></h1>
+                <p class="extra-info extra-info-sidebar"></p>
+            </div>
+            <p class="feels-like"></p>
+            <p class="condition condition-sidebar"></p>
+            <div class="hourly-forecast">
+                <h3>Hourly Forecast</h3>
+                <div class="hour1">
+                    <h4 class="hour-time">1 pm</h4>
+                    <p class="hour-temp">23</p>
+                    <p class="hour-condition">Cloudy</p>
+                </div>
+                <div class="hour2">
+                    <h4 class="hour-time">1 pm</h4>
+                    <p class="hour-temp">23</p>
+                    <p class="hour-condition">Cloudy</p>
+                </div>
+                <div class="hour3">
+                    <h4 class="hour-time">1 pm</h4>
+                    <p class="hour-temp">23</p>
+                    <p class="hour-condition">Cloudy</p>
+                </div>
+                <div class="hour4">
+                    <h4 class="hour-time">1 pm</h4>
+                    <p class="hour-temp">23</p>
+                    <p class="hour-condition">Cloudy</p>
+                </div>
+                <div class="hour5">
+                    <h4 class="hour-time">1 pm</h4>
+                    <p class="hour-temp">23</p>
+                    <p class="hour-condition">Cloudy</p>
+                </div>
+                <div class="hour6">
+                    <h4 class="hour-time">1 pm</h4>
+                    <p class="hour-temp">23</p>
+                    <p class="hour-condition">Cloudy</p>
+                </div>
+            </div>
+        </div>
         <script src="https://kit.fontawesome.com/0d5b687ba9.js" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
     </body>
 </html>

@@ -6,7 +6,7 @@
 
 body {
   background-color: #eaeaea;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -14,14 +14,14 @@ body {
 
 .main-body {
   background-color: #fafafa;
-  height: 75vh;
+  height: 78vh;
   width: 50vw;
   border-radius: 30px 0 0 30px;
 }
 
 .sidebar {
   background-color: #f6f6f6;
-  height: 75vh;
+  height: 78vh;
   width: 35vw;
   border-radius: 0 30px 30px 0;
 }
@@ -36,7 +36,8 @@ body {
   font-weight: 500;
 }
 
-.temp-area {
+.temp-area,
+.condition {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,4 +47,161 @@ body {
   font-size: 180px;
   color: #696969;
   font-weight: 500;
+  margin-right: 20px;
+}
+
+.condition {
+  font-size: 30px;
+  color: #696969;
+  font-weight: 500;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0 0;
+}
+.forecast .day {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 100px;
+  height: 90px;
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 1px solid transparent;
+}
+.forecast .day h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #696969;
+}
+.forecast .day p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #696969;
+  text-align: center;
+  text-transform: capitalize;
+}
+.forecast .day:hover {
+  border: 1px solid #696969;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 15px;
+}
+.search-box input,
+.search-box button {
+  width: 200px;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #696969;
+  padding: 5px;
+}
+.search-box input:focus {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px 0 0 5px;
+}
+.search-box button {
+  width: 50px;
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+  background-color: #f6f6f6;
+  color: #696969;
+}
+.search-box button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.suggestion-box {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.suggested-city {
+  position: absolute;
+  z-index: 3;
+  background-color: #f6f6f6;
+  width: 200px;
+  height: auto;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #696969;
+  margin-left: -50px;
+  margin-top: 90px;
+  text-align: left;
+}
+
+.btn-city {
+  font-size: 15px;
+}
+
+.suggested-city:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.time {
+  text-align: center;
+  margin: 30px;
+}
+
+.temp-sidebar {
+  font-size: 50px;
+}
+
+.extra-info-sidebar {
+  font-size: 15px;
+}
+
+.feels-like {
+  font-size: 15px;
+  text-align: center;
+  color: #696969;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.condition-sidebar {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hourly-forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0 0;
+  flex-wrap: wrap;
+}
+.hourly-forecast h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.hourly-forecast h4,
+.hourly-forecast p {
+  margin-top: 10px;
+}
+.hourly-forecast div {
+  text-align: center;
+  width: 20%;
+  height: auto;
+  border: 1px solid #696969;
+  border-radius: 10px;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
